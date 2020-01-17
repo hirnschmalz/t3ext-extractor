@@ -39,10 +39,10 @@ class Number
      * Extracts an integer at the end of a string.
      *
      * @param string $str
-     * @return string
+     * @return null|string
      * @throws \InvalidArgumentException
      */
-    public static function extractIntegerAtEnd($str): string
+    public static function extractIntegerAtEnd($str)
     {
         if (is_array($str)) {
             throw new \InvalidArgumentException('String parameter expected, array given', 1454591285);
